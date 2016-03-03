@@ -1,4 +1,4 @@
-# DocumentationMarkdownToHtml
+# Convert documentation writen in Markdown to Html
 Use Gulp to convert documentation written in Markdown to HTML
 
 ## Step 0 : Prerequisites
