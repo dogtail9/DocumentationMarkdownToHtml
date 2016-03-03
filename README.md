@@ -71,7 +71,7 @@ If you open the html file in Chrome, edit and save the markdown file. Chrome wil
 *Add all html files to the **Documentation** artifact*
 
 ![](Media/012_BuildResult.PNG)  
-*The __Documentation__ artifact is created for __Build 20160303.1__ *
+_The __Documentation__ artifact is created for __Build 20160303.1__ _
 
 ![](Media/013_ExploreArtifact.PNG)  
 *Right click on the **Test.html** file an download it*
