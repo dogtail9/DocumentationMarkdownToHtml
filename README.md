@@ -1,4 +1,4 @@
-# Converts documentation writen in Markdown to Html
+# Convert Markdown to Html in the build process
 This project contains a gulpfile that converts Markdown files to Html.
 
 ## Step 0 : Prerequisites
