@@ -69,7 +69,7 @@ If you open the html file in Chrome, edit and save the markdown file. Chrome wil
 
 ### Gulp
 ![](Media/010_Gulp.PNG)  
-*Run the BuildDocumentation, add the --BuildNumber argument*
+*Run the BuildDocumentation task, add the --BuildNumber argument and set the working directory to the Documentation folder*
 
 ### Copy and Publish Build Artifacts
 ![](Media/011_CreateArtifact.PNG)  
