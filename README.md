@@ -59,7 +59,7 @@ If you open the html file in Chrome, edit and save the markdown file. Chrome wil
 
 ## Step 5 : Generate the documentation as a part of your build in TFS
 ![](Media/008_BuildTemplate.PNG)  
-*Create a new build Definition. Add the **npm**, **Gulp** and **Copy and Publish Build Artifacts** tasks*
+*Create a new build Definition. Add the __npm__, **Gulp** and **Copy and Publish Build Artifacts** tasks*
 
 ![](Media/009_Npm.PNG)  
 *Run the **install** command and set the **Working Directory** to the **Documentation** folder*
@@ -71,7 +71,7 @@ If you open the html file in Chrome, edit and save the markdown file. Chrome wil
 *Add all html files to the **Documentation** artifact*
 
 ![](Media/012_BuildResult.PNG)  
-*The **Documentation** artifact is created for **Build 20160303.1** *
+*The **Documentation** artifact is created for __Build 20160303.1__ *
 
 ![](Media/013_ExploreArtifact.PNG)  
 *Right click on the **Test.html** file an download it*
