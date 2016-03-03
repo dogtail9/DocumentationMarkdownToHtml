@@ -58,21 +58,28 @@ Open the Test.html file in the Markdown folder in a browser.
 If you open the html file in Chrome, edit and save the markdown file. Chrome will automatically reload the page.
 
 ## Step 5 : Generate the documentation as a part of your build in TFS
+
+### Create Build Definition
 ![](Media/008_BuildTemplate.PNG)  
 *Create a new build Definition. Add the npm, Gulp and Copy and Publish Build Artifacts tasks*
 
+### npm
 ![](Media/009_Npm.PNG)  
 *Run the install command and set the Working Directory to the Documentation folder*
 
+### Gulp
 ![](Media/010_Gulp.PNG)  
 *Run the BuildDocumentation, add the --BuildNumber argument*
 
+### Copy and Publish Build Artifacts
 ![](Media/011_CreateArtifact.PNG)  
 *Add all html files to the Documentation artifact*
 
+### Build Result
 ![](Media/012_BuildResult.PNG)  
 *The Documentation artifact is created for Build 20160303.1*
 
+### Artifact
 ![](Media/013_ExploreArtifact.PNG)  
 *Download and open the Test.html file*
 
