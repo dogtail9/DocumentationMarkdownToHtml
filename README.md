@@ -59,9 +59,9 @@ If you open the html file in Chrome, edit and save the markdown file. Chrome wil
 
 ## Step 5 : Generate the documentation as a part of your build in TFS
 
-### Create Build Definition
+### Build Definition
 ![](Media/008_BuildTemplate.PNG)  
-*Create a new build Definition. Add the npm, Gulp and Copy and Publish Build Artifacts tasks*
+*Add the npm, Gulp and Copy and Publish Build Artifacts tasks to your build definition*
 
 ### npm
 ![](Media/009_Npm.PNG)  
