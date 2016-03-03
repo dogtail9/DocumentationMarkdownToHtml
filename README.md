@@ -1,5 +1,5 @@
 # Convert documentation writen in Markdown to Html
-Use Gulp to convert documentation written in Markdown to HTML
+This project contains a gulpfile that converts Markdown files to Html.
 
 ## Step 0 : Prerequisites
 I have the following softwares installed on my machine.
