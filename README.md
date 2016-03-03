@@ -74,7 +74,7 @@ If you open the html file in Chrome, edit and save the markdown file. Chrome wil
 *The Documentation artifact is created for Build 20160303.1*
 
 ![](Media/013_ExploreArtifact.PNG)  
-*Right click on the Test.html file an download it*
+*Download and open the Test.html file*
 
 ![](Media/014_BuildNumerAdded.PNG)  
 *In the top right corner the html file is marked with the buildnumber 20160303.1*
