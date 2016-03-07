@@ -9,7 +9,8 @@ var gulp = require("gulp"),
     path = require('path'),
     fs = require('fs'),
     highlight = require('highlight.js'),
-    livereload = require('gulp-livereload');
+    livereload = require('gulp-livereload'),
+    wait = require('gulp-wait');
 
 var paths = {
     Template: "./Template.html",
@@ -47,6 +48,7 @@ gulp.task('BuildDocumentation', ['GenerateHtmlFromMarkdown'], function() {
                 .pipe(replace('.md', '.html'))
                 .pipe(rename(path.basename(file.path)))
                 .pipe(gulp.dest(paths.dist))
+                .pipe(wait(time))
                 .pipe(livereload());
         }))
 });
