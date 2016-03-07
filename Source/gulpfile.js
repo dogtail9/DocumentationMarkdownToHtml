@@ -20,7 +20,7 @@ var paths = {
 };
 
 var minPort = 1000;
-var maxPort = 1999;
+var maxPort = 1998;
 var myPort = Math.floor(Math.random() * (maxPort - minPort + 1) + minPort);
 
 gulp.task('Watch', function() {
