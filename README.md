@@ -1,5 +1,8 @@
 # Convert Markdown to Html in the build process
-This project contains a gulpfile that converts Markdown files to Html.
+This project contains a gulpfile that converts Markdown files to Html.  
+
+## Build Status
+![Build Status](https://dogtail.visualstudio.com/DefaultCollection/_apis/public/build/definitions/95f5fc1d-65ff-49a6-9a7c-973db555d56c/50/badge)
 
 ## Step 0 : Prerequisites
 I have the following softwares installed on my machine.
