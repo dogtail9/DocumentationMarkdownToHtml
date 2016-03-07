@@ -29,12 +29,14 @@ gulp.task('Watch', function() {
 })
 
 gulp.task('BuildDocumentation', ['GenerateHtmlFromMarkdown'], function() {
-    var BuildNumber, i = process.argv.indexOf("--BuildNumber");
+    var BuildNumber, time, i = process.argv.indexOf("--BuildNumber");
     if (i > -1) {
-        BuildNumber = '<p class="buildNumber">' + process.argv[i + 1] + '</p>'
+        BuildNumber = '<p class="buildNumber">' + process.argv[i + 1] + '</p>';
+         time = 0;
     }
     else {
         BuildNumber = '<p class="buildNumber">DevBuild</p>\n<script src="http://localhost:' + myPort + '/livereload.js?snipver=1"></script>';
+         time = 1000;
     }
 
     console.log(process.argv);
