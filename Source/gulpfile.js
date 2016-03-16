@@ -1,7 +1,5 @@
 "use strict";
 
-
-
 var gulp = require("gulp"),
     data = require('gulp-data'),
     img64 = require('gulp-img64'),
