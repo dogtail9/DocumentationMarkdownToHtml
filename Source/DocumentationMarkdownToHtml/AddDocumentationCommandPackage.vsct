@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+
+  <Commands package="guidAddDocumentationCommandPackage">
+
+    <Groups>
+      <Group guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" priority="0x0600" />
+    </Groups>
+
+    <Buttons>
+      <Button guid="guidAddDocumentationCommandPackageCmdSet" id="OpenInVsCodeCommandId" priority="0x0100" type="Button">
+        <Icon guid="guidImages" id="VisualStudioIcon" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>Open in Visual Studio Code</ButtonText>
+        </Strings>
+      </Button>
+      
+      <Button guid="guidAddDocumentationCommandPackageCmdSet" id="AddDocumentationCommandId" priority="0x0100" type="Button">
+        <Icon guid="guidImages" id="MarkDownIcon" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>Add markdown documentation to the project</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidAddDocumentationCommandPackageCmdSet" id="CheckForUpdatesCommandId" priority="0x0100" type="Button">
+        <Icon guid="guidImages" id="MarkDownIcon" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <CommandName>Dogtail.CheckForUpdates</CommandName>
+          <!--<CanonicalName>Dogtail.CheckForUpdates</CanonicalName>
+          <LocCanonicalName>Dogtail.CheckForUpdates</LocCanonicalName>-->
+          <ButtonText>Check for updated documentation files</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidAddDocumentationCommandPackageCmdSet" id="UpdateGulpFileCommandId" priority="0x0100" type="Button">
+        <Icon guid="guidImages" id="MarkDownIcon" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>Update gulpfile.js</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidAddDocumentationCommandPackageCmdSet" id="UpdateHtmlTemplateCommandId" priority="0x0100" type="Button">
+        <Icon guid="guidImages" id="MarkDownIcon" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>Update Template.html</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidAddDocumentationCommandPackageCmdSet" id="UpdatePackageJsonCommandId" priority="0x0100" type="Button">
+        <Icon guid="guidImages" id="MarkDownIcon" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>Update package.json</ButtonText>
+        </Strings>
+      </Button>
+
+      <Button guid="guidAddDocumentationCommandPackageCmdSet" id="UpdateVsCodeTasksJsonCommandId" priority="0x0100" type="Button">
+        <Icon guid="guidImages" id="MarkDownIcon" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>TextChanges</CommandFlag>
+        <CommandFlag>DontCache</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <Strings>
+          <ButtonText>Update tasks.json</ButtonText>
+        </Strings>
+      </Button>
+
+    </Buttons>
+
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\MyIcons.png" usedList="MarkDownIcon, VisualStudioIcon"/>
+    </Bitmaps>
+  </Commands>
+
+  <CommandPlacements>
+    <!--<CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" priority="0x0000">
+      <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" priority="0x0000">
+      <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE" />
+    </CommandPlacement>-->
+
+    <CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" priority="0x0000">
+      <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="OpenInVsCodeCommandId" priority="0x0100">
+      <Parent guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" />
+    </CommandPlacement>
+    
+    <CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="AddDocumentationCommandId" priority="0x0100">
+      <Parent guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="CheckForUpdatesCommandId" priority="0x0200">
+      <Parent guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="UpdateGulpFileCommandId" priority="0x0300">
+      <Parent guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="UpdateHtmlTemplateCommandId" priority="0x0400">
+      <Parent guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="UpdatePackageJsonCommandId" priority="0x0500">
+      <Parent guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" />
+    </CommandPlacement>
+
+    <CommandPlacement guid="guidAddDocumentationCommandPackageCmdSet" id="UpdateVsCodeTasksJsonCommandId" priority="0x0600">
+      <Parent guid="guidAddDocumentationCommandPackageCmdSet" id="CommandGroup" />
+    </CommandPlacement>
+  </CommandPlacements>
+
+  <Symbols>
+    <GuidSymbol name="guidAddDocumentationCommandPackage" value="{fa6bf923-31c1-43aa-b0dc-24c485190e54}" />
+
+    <GuidSymbol name="guidAddDocumentationCommandPackageCmdSet" value="{c0e2f059-bdbc-47a5-999f-b0901f86d7ff}">
+      <IDSymbol name="CommandGroup" value="0x1020" />
+      <IDSymbol name="AddDocumentationCommandId" value="0x0100" />
+      <IDSymbol name="OpenInVsCodeCommandId" value="0x0200" />
+      <IDSymbol name="CheckForUpdatesCommandId" value="0x0300" />
+      <IDSymbol name="UpdateGulpFileCommandId" value="0x0400" />
+      <IDSymbol name="UpdateHtmlTemplateCommandId" value="0x0500" />
+      <IDSymbol name="UpdatePackageJsonCommandId" value="0x0600" />
+      <IDSymbol name="UpdateVsCodeTasksJsonCommandId" value="0x0700" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidImages" value="{8062d29e-b47e-4fb6-9c94-94924b03409c}" >
+      <IDSymbol name="MarkDownIcon" value="1" />
+      <IDSymbol name="VisualStudioIcon" value="2" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
