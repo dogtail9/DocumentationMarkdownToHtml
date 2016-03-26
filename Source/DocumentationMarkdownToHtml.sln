@@ -5,6 +5,28 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentationMarkdownToHtml", "DocumentationMarkdownToHtml\DocumentationMarkdownToHtml.csproj", "{E94CC0C1-ED39-405A-BDBB-22661CA11A60}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{A21B6AD7-128D-4C33-B6A6-C6B0F9B65DFB}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\gulpfile.js = Documentation\gulpfile.js
+		Documentation\package.json = Documentation\package.json
+		Documentation\Template.html = Documentation\Template.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Markdown", "Markdown", "{FA59D66A-1EFC-43D9-9C52-1A2418D18B09}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Markdown\Test.md = Documentation\Markdown\Test.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Media", "Media", "{FC828DD5-80FE-4737-98A7-B8DD2D376281}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\Markdown\Media\Image.png = Documentation\Markdown\Media\Image.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".vscode", ".vscode", "{9E8CA97A-9587-44BA-BD19-49DDFDBC6E9B}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\.vscode\tasks.json = Documentation\.vscode\tasks.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +40,19 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FA59D66A-1EFC-43D9-9C52-1A2418D18B09} = {A21B6AD7-128D-4C33-B6A6-C6B0F9B65DFB}
+		{FC828DD5-80FE-4737-98A7-B8DD2D376281} = {FA59D66A-1EFC-43D9-9C52-1A2418D18B09}
+		{9E8CA97A-9587-44BA-BD19-49DDFDBC6E9B} = {A21B6AD7-128D-4C33-B6A6-C6B0F9B65DFB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		DocState = Added
+		vscodetasksjson = 9951011a2ba86ee5ae59d93e81aefbc096b1c1f7
+		packagejson = b69e487fb3a76f2661b6f12c2032fccb0c0d276c
+		gulpfilejs = ce81ad535b95c697e0793a1b401f8f9daf4fda65
+		Templatehtml = 9191a5e502695456a2a8b6609c33af8defcaab92
+		MarkdownMediaImagepng = d1065da0ea973eeebe919086d0588cfd9612226a
+		MarkdownTestmd = b00b73a1faee16577810281920d8c0b8a4b8c913
 	EndGlobalSection
 EndGlobal
