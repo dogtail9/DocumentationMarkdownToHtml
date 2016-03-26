@@ -47,12 +47,12 @@ Global
 		{9E8CA97A-9587-44BA-BD19-49DDFDBC6E9B} = {A21B6AD7-128D-4C33-B6A6-C6B0F9B65DFB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		DocState = Added
-		vscodetasksjson = 9951011a2ba86ee5ae59d93e81aefbc096b1c1f7
-		packagejson = b69e487fb3a76f2661b6f12c2032fccb0c0d276c
-		gulpfilejs = ce81ad535b95c697e0793a1b401f8f9daf4fda65
-		Templatehtml = 9191a5e502695456a2a8b6609c33af8defcaab92
-		MarkdownMediaImagepng = d1065da0ea973eeebe919086d0588cfd9612226a
 		MarkdownTestmd = b00b73a1faee16577810281920d8c0b8a4b8c913
+		MarkdownMediaImagepng = d1065da0ea973eeebe919086d0588cfd9612226a
+		Templatehtml = 269dc1a827aefc218541d851afe7fa975f11a020
+		gulpfilejs = b50f0896792d41aff100db92d06acd0e9be278da
+		packagejson = b99f7dc0c0c2ed992cbf16541af02c89360db409
+		vscodetasksjson = 9951011a2ba86ee5ae59d93e81aefbc096b1c1f7
+		DocState = Added
 	EndGlobalSection
 EndGlobal
